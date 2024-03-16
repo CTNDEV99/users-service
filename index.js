@@ -9,7 +9,7 @@ const fileRoute = require('./fileRoute');
 const app = express();
 const port = 8080;
 const cors = require('cors');
-mongoose.connect('mongodb://localhost:27017/ladoum', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://127.0.0.1:27017/lb', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(cors());
 const User = mongoose.model('User', {
